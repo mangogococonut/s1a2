@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html,body{
+  margin:0
+}
+
+
+#wrapper {
+  position: absolute;
+  width: 350px;
+  height: 500px;
+  background-color:#ededed;
+
+}
+
+#gridoverlay {
+  position: absolute;
+  width: 350px;
+  height: 500px;
+  border: solid #dcdbd6;
+  border-size: 1px 1px 1px 1px;
+  background-size: 50px 50px; /* edit red line spacing (width height) - blue line is half */
+  background-image:
+  linear-gradient(to right, #999997 0%, transparent 1px, transparent 50%, #999997 50%, transparent calc(50% + 1px)),
+  linear-gradient(to bottom, #dcdbd6 0%, transparent 1px, transparent 50%, #d9dad5 50%, transparent calc(50% + 1px));
+  z-index: 0;
+}
+
+#pot {
+  position: absolute;
+  background-color: #828a4d;
+  background: radial-gradient(circle at top, #cb7252, #e6a27f);
+  left: -30px;
+  height: 75px;
+  width: 150px;
+  border-radius: 0 0 100px 100px;
+  z-index: 5;
+}
+
+#meshbag {
+  position: absolute;
+  width: 150px;
+  height: 500px;
+  top: 0;
+  left: 200px;
+  background-image: radial-gradient(#212121 20%, transparent 20%),
+      radial-gradient(#212121 20%, transparent 20%);
+  background-color: #fffff;
+  background-position: 0 0, 50px 50px;
+  background-size: 20px 20px;
+  z-index: 2
+}
+
+#greenbook {
+  position: absolute;
+  width: 275px;
+  border-bottom: 400px solid #85a3ab;
+  opacity: 0.5;
+}
+
+#greenbook:after {
+  content: "Ainsworth Keyboard Trainer";
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  height: 100px;
+  width: 100px;
+  background: transparent;
+  font-size: 40px;
+  color: white;
+  z-index: 4;
+}
+
+#Topgreenboook {
+  position: absolute;
+  left: 0px;
+  bottom: 25px;
+  width: 200px;
+  height: 350px;
+  background-color: white;
+  transform: rotate(30deg);
+  z-index: 3;
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  color: black;
+}
+
+div.smileyface {
+	width: 300px;
+	height: 300px;
+  scale: 0.5;
+  left: 175px;
+  top: 175px;
+	position: relative;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	display: block;
+	background: #ffef95;
+	-moz-box-shadow: inset 0px -14px 14px rgba(0, 0, 0, .3), 0px 2px 20px rgba(0, 0, 0, .6);
+  z-index: 5;
+	}
+	
+p.eyes {
+	width: 50px;
+	height: 80px;
+	background: #222;
+	border-radius: 100px/160px;
+	-webkit-border-radius: 100px 160px;
+	-moz-border-radius: 100px/160px;
+	position: absolute;
+	top: 40px;
+	box-shadow: 0 2px 0 rgba(255,255,255, 0.8);
+	-webkit-box-shadow: 0 2px 0 rgba(255,255,255, 0.8);
+	-moz-box-shadow: 0 2px 0 rgba(255,255,255, 0.8);
+	}	
+	
+	p.eyes.lefteye {
+		left: 75px;
+		}
+		
+	p.eyes.righteye {
+		right: 75px;
+		}
+		
+div.smile {
+	width: 200px;
+	height: 70px;
+	border: 10px solid #222;
+	border-top: 0;
+	background: rgba(0,0,0,0);
+	-moz-border-radius: 0 0 120px 120px / 0 0 90px 90px;
+	-webkit-border-radius: 0 0 120px 120px 0 0 90px 90px;
+	border-radius: 0 0 120px 120px / 0 0 90px 90px;
+	position: absolute;
+	bottom: 50px;
+	left: 50px;
+	box-shadow: 0 2px 0 rgba(255,255,255, 0.8);
+	-webkit-box-shadow: 0 2px 0 rgba(255,255,255, 0.8);
+	-moz-box-shadow: 0 2px 0 rgba(255,255,255, 0.8);
+	}
+	
+div.corner {
+	width: 10px;
+	height: 30px;
+	background: #222;
+	border-radius: 100px/160px;
+	-webkit-border-radius: 100px 160px;
+	-moz-border-radius: 100px/160px;
+	position: absolute;
+	top: -12px;
+	-webkit-transform: rotate(65deg);
+	-moz-transform: rotate(65deg);
+	left: -12px;
+	}
+	
+	div.corner.right {
+		left: 190px;
+		-webkit-transform: rotate(-65deg);
+		-moz-transform: rotate(-65deg);		
+		}
+
+#LINE {
+  position: absolute;
+  left: 250px;
+  width: 6px;
+  border-bottom: 500px solid #7993a4;
+  
+}
+
+#LINE2 {
+  position: absolute;
+  top: 50px;
+  width: 6px;
+  border-bottom: 700px solid #66848c;
+  transform: rotate(90deg);
+  z-index: 10;
+}
+
+#LINE3 {
+  position: absolute;
+  top: 300px;
+  left: 85px;
+  width: 1.5px;
+  height: 190px;
+  background-color: #0e1a2d;
+  z-index: 4;
+}
+
+
+#LINE4 {
+  position: absolute;
+  top: 195px;
+  left: 15px;
+  width: 165px;
+  height: 2px;
+  background-color: #0e1a2a;
+  z-index: 10;
+}
+
+.dot {
+  height: 40px;
+  width: 40px;
+  background-color: #59616c;
+  border-radius: 50%;
+  display: inline-block;
+  rotate: 30deg;
+  z-index: 15;
+  margin: 10px;
+  font-size: 20px;
+  -webkit-text-fill-color: transparent;
+/*    -webkit-background-clip: text; */
+}
+
+.dot:hover{ 
+ -webkit-background-clip: text;
+  color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #00000;
+}
+
+.aixin {
+    position: absolute;
+    transform: translate(0px,0px) scale(1);
+    transition: transform 0.7s ease-out 0s;
+}
+
+.aixin:before,.aixin:after {
+    position: absolute;
+    left: 10px;
+    height: 16px;
+    width: 10px;
+    content: "";
+    background-color: inherit;
+    border-radius: 5px 5px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.aixin:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
